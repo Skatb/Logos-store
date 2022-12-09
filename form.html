@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Card-product</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221209024017">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<span class="menu__span">Меню</span>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto="#product-section-cold-appetizers" class="menu__item"><a href="#" class="menu__link">Холодные закуски</a></li>
+							<li data-goto="#product-section-hot-appetizers" class="menu__item"><a href="#" class="menu__link">Горячие закуски</a></li>
+							<li data-goto="#product-section-meat-dishes" class="menu__item"><a href="#" class="menu__link">Мясные блюда</a></li>
+							<li data-goto="#product-section-soup" class="menu__item"><a href="#" class="menu__link">Супы</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Рыбные блюда</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Гриль меню</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Фирменные блюда</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Напитки</a></li>
+							<li class="menu__item number"><a href="#" class="menu__link ">Контакты:</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">+8 (800) 555-35-35</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="index.html" class="header-logo">LOGOS</a>
+				<form action="#" data-da=".header-adaptive,1010,0" class="header-form">
+					<div class="header-form__block">
+						<span class="header-form__location-img"></span>
+						<input placeholder="Введите адрес доставки" class="header-form__input input-remove">
+						<button type="submit" class="header-form__button"></button>
+					</div>
+				</form>
+				<a href="tel:+88005553535" class="header__callback"></a>
+				<div class="header-phone">
+					<span class="header-phone__description">Контакты:</span>
+					<a href="tel:+88005553535" class="header-phone__number">+8 (800) 555-35-35</a>
+				</div>
+				<div data-popup="#popup" class="header-cart">
+					<a href="index.html" class="header-cart__button">Корзина</a>
+					<span class="header-cart__decor"></span>
+					<div class="header-cart__counter">
+						<span class="header-cart__counter-span">0</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-adaptive"></div>
+		</header>
+		<main class="page">
+			<div class="main-menu__container horizontal-scroller">
+				<ul class="main-menu__list">
+					<li class="main-menu__item">Холодные закуски</li>
+					<li class="main-menu__item">Горячие закуски</li>
+					<li class="main-menu__item">Мясные блюда</li>
+					<li class="main-menu__item">Супы</li>
+					<li class="main-menu__item">Рыбные блюда</li>
+					<li class="main-menu__item">Гриль меню</li>
+					<li class="main-menu__item">Фирменные блюда</li>
+					<li class="main-menu__item">Напитки</li>
+				</ul>
+			</div>
+			<div class="main-menu__line"></div>
+			<div class="form__container">
+				<a href="index.html" class="form-back">Назад</a>
+				<h2 class="form__title title">Оформление заказа</h2>
+				<form action="#" class="form__body form-section">
+					<div class="form-section__info-block">
+						<h3 class="section__title">1. Контактная информация</h3>
+						<div class="info-block__form">
+							<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя*" class="info__input-name form__input">
+							<input required autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон*" class="info__input-number form__input">
+						</div>
+					</div>
+					<div class="form-section__delivery delivery-form">
+						<h3 class="delivery-form__title section__title">2. Доставка</h3>
+						<div class="delivery-form__tabs">
+							<div data-tabs class="tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title left-tab _tab-active ">Доставка</button>
+									<button type="button" class="tabs__title right-tab">Самовывоз</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body-delivery">
+										<p>Доставим через 1 час 30 минут</p>
+										<div class="tabs__body delivery-form__location">Адрес доставки</div>
+										<div class="tabs__body delivery-form__list">
+											<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Укажите улицу*" class="delivery-form__item form__input req-street">
+											<input required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Номер дома*" class="delivery-form__item form__input req-homeNumber">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="№ квартиры/офиса" class="delivery-form__item form__input">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Подъезд" class="delivery-form__item form__input">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Этаж" class="delivery-form__item form__input">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Комментарий" class="delivery-form__item form__input">
+										</div>
+									</div>
+									<div class="tabs__body-restaurant">
+										<select name="form[restaurant]" data-class-modif="form" class="tabs__body-select">
+											<option value="1" selected>Выребите ресторан</option>
+											<option value="Ресторан 1" class="tabs__body-select-item">ресторан №1</option>
+											<option value="Ресторан 2" class="tabs__body-select-item">ресторан №2</option>
+											<option value="Ресторан 3" class="tabs__body-select-item">ресторан №3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-section__delivery payment-form">
+						<h3 class="section__title">3. Оплатить</h3>
+						<div data-tabs class="payment-form__tabs tabs">
+							<nav data-tabs-titles class="tabs__navigation tabs-second-block">
+								<button type="button" class="tabs__title _tab-active left-tab">Оплата онлайн</button>
+								<button type="button" class="tabs__title">Курьеру картой</button>
+								<button type="button" class="tabs__title right-tab">Наличными</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									Оплата онлайн
+								</div>
+								<div class="tabs__body">
+									Курьеру картой
+								</div>
+								<div class="tabs__body">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Сдача с" class="input form__input">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section__delivery submit-block">
+						<div class="submit-block__checkbox">
+							<input id="personalData" class="checkbox__input submit-block__checkbox" type="checkbox" value="1" name="form[]">
+							<label for="personalData" class="checkbox__label checkbox__text submit-block__text">Я согласен на обработку моих перс. данных в соответствии с <a href="#" class="data-conditions">Условиями</a></label>
+						</div>
+						<button type="submit" class="submit-block__submit">Оформить заказ</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container footer-list">
+				<div data-goto=".header" class="footer-list__toHeader"></div>
+				<div class="footer-list__agreements agreements-footer">
+					<div class="agreements-footer__logo"><a href="index.html">LOGOS</a></div>
+					<div class="agreements-footer__copyright">© ООО СК «АПШЕРОН» <br>Все права защищены. 2010-2020</div>
+					<div class="agreements-footer__info info-agreements">
+						<ul class="info-agreements__list">
+							<li class="info-agreements__item">Пользовательское соглашение</li>
+							<li class="info-agreements__item">Карта сайта</li>
+							<li class="info-agreements__item">Политика конфиденциальности</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-list__nav nav-footer">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item"><a href="">О ресторане</a></li>
+						<li class="nav-footer__item"><a href="delivery.html">Условия доставки</a></li>
+						<li class="nav-footer__item">Возврат товара</li>
+						<li class="nav-footer__item"><a href="news.html">Акции</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img src="img/icons/popup-close.svg" alt="" class="popup-cart-img"></button>
+				<img src="img/icons/popup-cart.svg" alt="">
+				<div class="popup__title">КОРЗИНА ПУСТАЯ</div>
+				<button data-close type="button" class="popup__text">Посмотреть меню</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221209024017"></script>
+</body>
+
+</html>
